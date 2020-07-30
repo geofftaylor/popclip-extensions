@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Requirements</key>
+	<array>
+		<string>httpurl</string>
+	</array>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>choosy.png</string>
+			<key>Title</key>
+			<string>Open URL with Choosy</string>
+			<key>URL</key>
+			<string>x-choosy://prompt.all/{popclip text}</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Check Installed</key>
+			<true/>
+			<key>Bundle Identifier</key>
+			<string>com.choosyosx.Choosy</string>
+			<key>Link</key>
+			<string>https://www.choosyosx.com</string>
+			<key>Name</key>
+			<string>Choosy</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Open the URL with Choosy.</string>
+	<key>Extension Identifier</key>
+	<string>net.gtaylor.popclip.extension.open-with-choosy</string>
+	<key>Extension Name</key>
+	<string>Open with Choosy</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>
