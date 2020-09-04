@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Extension Identifier</key>
+	<string>net.gtaylor.popclip.extension.backticks</string>
+	<key>Extension Name</key>
+	<string>Backticks</string>
+	<key>Extension Description</key>
+	<string>Enclose the selected text with ` `, &apos; &apos;, &quot; &quot;, ( ), [ ], { } or &lt; &gt;</string>
+	<key>Extension Image File</key>
+	<string>backtick.png</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-backticks</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>`Backticks`</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-single</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>&apos;Single&apos;</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-double</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>&quot;Double&quot;</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-parentheses</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>(Parentheses)</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-brackets</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>[Brackets]</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-braces</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>{Braces}</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>opt-angle</string>
+			<key>Option Type</key>
+			<string>boolean</string>
+			<key>Option Label</key>
+			<string>&lt;Angle&gt;</string>
+		</dict>
+	</array>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Backticks</string>
+			<key>Image File</key>
+			<string>backtick.png</string>
+			<key>Shell Script File</key>
+			<string>backticks.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-backticks=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Single Quotes</string>
+			<key>Image File</key>
+			<string>single.png</string>
+			<key>Shell Script File</key>
+			<string>single.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-single=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Double Quotes</string>
+			<key>Image File</key>
+			<string>double.png</string>
+			<key>Shell Script File</key>
+			<string>double.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-double=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Parentheses</string>
+			<key>Image File</key>
+			<string>parentheses.png</string>
+			<key>Shell Script File</key>
+			<string>parentheses.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-parentheses=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Brackets</string>
+			<key>Image File</key>
+			<string>brackets.png</string>
+			<key>Shell Script File</key>
+			<string>brackets.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-brackets=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Braces</string>
+			<key>Image File</key>
+			<string>braces.png</string>
+			<key>Shell Script File</key>
+			<string>braces.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-braces=1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Angle Brackets</string>
+			<key>Image File</key>
+			<string>angle.png</string>
+			<key>Shell Script File</key>
+			<string>angle.sh</string>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Requirements</key>
+			<array>
+				<string>opt-angle=1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+printf "'${POPCLIP_TEXT}'"
